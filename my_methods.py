@@ -64,8 +64,7 @@ def media(lista: list=[0]) -> float:
     
     Returns
     -------
-    tuple
-        Tuple com (média dos valores, situação de aprovação)'''
+    float'''
     calculo = sum(lista)/len(lista)
     aprovacao = 'aprovado(a)' if calculo>=6 else 'reprovado(a)'
     print(f'O estudante está {aprovacao} com uma média de {calculo:.1f}.')
