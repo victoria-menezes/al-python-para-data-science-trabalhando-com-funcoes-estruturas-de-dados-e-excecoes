@@ -66,6 +66,4 @@ def media(lista: list=[0]) -> float:
     -------
     float'''
     calculo = sum(lista)/len(lista)
-    aprovacao = 'aprovado(a)' if calculo>=6 else 'reprovado(a)'
-    print(f'O estudante está {aprovacao} com uma média de {calculo:.1f}.')
     return calculo
