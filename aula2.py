@@ -3,9 +3,9 @@
 # Notas do(a) estudante
 notas = {'1º Trimestre': 8.5, '2º Trimestre': 7.5, '3º Trimestre': 9}
 soma = sum(notas.values())
-boletim = round(soma/len(notas),1)
+media_valor = round(soma/len(notas),1)
 
-print(boletim)
+print(media_valor)
 
 # Recebemos uma nova demanda, desta vez, de calcular a média de um estudante a partir de uma lista e retornar tanto a média quanto a situação do estudante ("Aprovado(a)" se a nota for maior ou igual a 6.0, caso contrário, será "Reprovado(a)").
 # Além disso, precisamos exibir um pequeno texto em que indicamos a média do(a) estudante e qual a situação. Os dados recebidos correspondem a uma lista contendo apenas as notas de um estudante em uma dada matéria.
@@ -14,7 +14,7 @@ print(boletim)
 # Notas do(a) estudante
 notas = [6.0, 7.0, 9.0, 5.0]
 
-def boletim(lista: list=[0]) -> float:
+def media(lista: list=[0]) -> float:
     '''Função para calcular a médiade notas passadas por uma lista.
     
     Parameters
@@ -30,7 +30,7 @@ def boletim(lista: list=[0]) -> float:
     print(f'O estudante está {aprovacao} com uma média de {calculo:.1f}.')
     return (calculo, aprovacao)
 
-boletim(notas)
+media(notas)
 
 # função lambda:
 # lambda <variavel>: <expressao>
