@@ -54,3 +54,19 @@ def formatar_lista(lista, type = 'float'):
         raise ValueError('Tipo inválido.')
     
     return lista
+
+def media(lista: list=[0]) -> float:
+    '''Função para calcular a médiade notas passadas por uma lista.
+    
+    Parameters
+    ----------
+    lista : list, default=0
+    
+    Returns
+    -------
+    tuple
+        Tuple com (média dos valores, situação de aprovação)'''
+    calculo = sum(lista)/len(lista)
+    aprovacao = 'aprovado(a)' if calculo>=6 else 'reprovado(a)'
+    print(f'O estudante está {aprovacao} com uma média de {calculo:.1f}.')
+    return calculo

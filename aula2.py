@@ -14,7 +14,7 @@ print(media_valor)
 # Notas do(a) estudante
 notas = [6.0, 7.0, 9.0, 5.0]
 
-def media(lista: list=[0]) -> float:
+def media(lista: list=[0]) -> tuple:
     '''Função para calcular a médiade notas passadas por uma lista.
     
     Parameters
@@ -42,7 +42,7 @@ def qualitativo (x):
     return x + 0.5
 qualitativo(nota)
 
-#Tentando a mesma função para uma função lambda
+#Tentando a mesma função em uma função lambda
 qualitativo = lambda x: x + 0.5
 qualitativo(nota)
 
@@ -57,13 +57,9 @@ media_estudante = media_ponderada(N1, N2, N3)
 print(media_estudante)
 
 # Recebemos mais uma demanda, desta vez, para criar uma pequena função que pudesse adicionar qualitativo (pontuação extra) às notas do trimestre dos estudantes da turma que ganhou a gincana de programação promovida pela escola. Cada estudante receberá o qualitativo de 0.5 acrescido à média.
-
 # Os dados recebidos correspondem a uma lista contendo as notas de alguns estudantes e uma variável com o qualitativo recebido.
-
 # Vamos resolver esse desafio?
-
 # Para facilitar o nosso entendimento do processo vamos aplicar o qualitativo às notas de 5 estudantes, mas você pode testar outros casos para treinar.
-
 # Notas do(a) estudante
 notas = [6.0, 7.0, 9.0, 5.5, 8.0]
 qualitativo = 0.5
