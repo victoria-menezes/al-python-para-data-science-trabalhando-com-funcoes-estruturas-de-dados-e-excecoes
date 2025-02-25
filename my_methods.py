@@ -56,7 +56,7 @@ def formatar_lista(lista, type = 'float'):
     return lista
 
 def media(lista: list=[0]) -> float:
-    '''Função para calcular a médiade notas passadas por uma lista.
+    '''Função para calcular a média de notas passadas por uma lista.
     
     Parameters
     ----------
